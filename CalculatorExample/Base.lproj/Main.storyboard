@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="coolvetica_rg.otf">
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CalculatorExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Overarching">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="LEe-38-VUz">
+                                <rect key="frame" x="19" y="36" width="338" height="30"/>
+                                <color key="backgroundColor" red="0.97670525312423706" green="0.60546392202377319" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQd-QC-MPS">
+                                <rect key="frame" x="21" y="299" width="113" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="48"/>
+                                <color key="tintColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XN7-l5-Lxp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qv0-Pi-Irj">
+                                <rect key="frame" x="142" y="299" width="113" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="48"/>
+                                <color key="tintColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jK7-Jq-dZW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzP-N5-hkw">
+                                <rect key="frame" x="271" y="82" width="86" height="133"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="48"/>
+                                <color key="tintColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ygy-Xy-4uq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prt-kR-Vvd">
+                                <rect key="frame" x="271" y="366" width="86" height="133"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="48"/>
+                                <color key="tintColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aef-Pz-A92"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkk-4P-2e2">
+                                <rect key="frame" x="271" y="223" width="86" height="133"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="48"/>
+                                <color key="tintColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dp-uA-g9B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAA-ow-npB">
+                                <rect key="frame" x="142" y="83" width="113" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="48"/>
+                                <color key="tintColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddS-ua-bsF"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SlQ-sU-tj8">
+                                <rect key="frame" x="47" y="609" width="281" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isTypingNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uh-P6-D2F">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="20"/>
+                                        <color key="backgroundColor" red="0.25005361437797546" green="0.30566063523292542" blue="0.58369332551956177" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isEvaluating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pF-I2-Ht9">
+                                        <rect key="frame" x="0.0" y="30" width="281" height="20"/>
+                                        <color key="backgroundColor" red="0.19215686274509805" green="0.22745098039215686" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8Q-0K-dv0">
+                                <rect key="frame" x="21" y="83" width="113" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="48"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKm-Oi-DO9"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ilE-0J-U5P">
+                                <rect key="frame" x="308" y="511" width="51" height="31"/>
+                                <color key="onTintColor" red="0.039215686274509803" green="0.37647058823529411" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchedDebugValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="ovQ-Fl-ZZD"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13346317410469055" green="0.18231484293937683" blue="0.25190103054046631" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Prt-kR-Vvd" firstAttribute="centerX" secondItem="wzP-N5-hkw" secondAttribute="centerX" id="0Di-5e-jrQ"/>
+                            <constraint firstItem="wzP-N5-hkw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="1s1-zm-QW3"/>
+                            <constraint firstItem="Prt-kR-Vvd" firstAttribute="bottom" secondItem="Qv0-Pi-Irj" secondAttribute="bottom" id="3EX-PP-03r"/>
+                            <constraint firstItem="yQd-QC-MPS" firstAttribute="width" secondItem="g8Q-0K-dv0" secondAttribute="width" id="4LM-Im-H2L"/>
+                            <constraint firstItem="yQd-QC-MPS" firstAttribute="height" secondItem="g8Q-0K-dv0" secondAttribute="height" id="4rD-9i-eKf"/>
+                            <constraint firstItem="LAA-ow-npB" firstAttribute="width" secondItem="g8Q-0K-dv0" secondAttribute="width" id="6vk-9c-VQ6"/>
+                            <constraint firstItem="Qv0-Pi-Irj" firstAttribute="centerX" secondItem="LAA-ow-npB" secondAttribute="centerX" id="CK3-0T-rrw"/>
+                            <constraint firstItem="g8Q-0K-dv0" firstAttribute="top" secondItem="LEe-38-VUz" secondAttribute="bottom" constant="17" id="EdT-Ha-KTN"/>
+                            <constraint firstItem="LAA-ow-npB" firstAttribute="centerY" secondItem="g8Q-0K-dv0" secondAttribute="centerY" id="Jpb-qn-GXV"/>
+                            <constraint firstItem="Kkk-4P-2e2" firstAttribute="centerX" secondItem="wzP-N5-hkw" secondAttribute="centerX" id="JxK-jo-Qz0"/>
+                            <constraint firstItem="Qv0-Pi-Irj" firstAttribute="centerY" secondItem="yQd-QC-MPS" secondAttribute="centerY" id="KdL-SD-GsR"/>
+                            <constraint firstItem="wzP-N5-hkw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="MTZ-04-yLE"/>
+                            <constraint firstItem="wzP-N5-hkw" firstAttribute="top" secondItem="LEe-38-VUz" secondAttribute="bottom" constant="16" id="Mdd-5R-pxA"/>
+                            <constraint firstItem="ilE-0J-U5P" firstAttribute="trailing" secondItem="Prt-kR-Vvd" secondAttribute="trailing" id="Nbf-M5-7w0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SlQ-sU-tj8" secondAttribute="bottom" constant="8" id="OpD-an-F32"/>
+                            <constraint firstItem="LAA-ow-npB" firstAttribute="height" secondItem="g8Q-0K-dv0" secondAttribute="height" id="Qbf-So-EdD"/>
+                            <constraint firstItem="yQd-QC-MPS" firstAttribute="top" secondItem="g8Q-0K-dv0" secondAttribute="bottom" constant="16" id="aGy-G5-NRF"/>
+                            <constraint firstItem="ilE-0J-U5P" firstAttribute="top" secondItem="Prt-kR-Vvd" secondAttribute="bottom" constant="12" id="bQW-OL-hU0"/>
+                            <constraint firstItem="Prt-kR-Vvd" firstAttribute="width" secondItem="wzP-N5-hkw" secondAttribute="width" id="bbR-fv-pT2"/>
+                            <constraint firstItem="g8Q-0K-dv0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="bey-yg-Zhx"/>
+                            <constraint firstItem="LEe-38-VUz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="e3c-Vh-mwW"/>
+                            <constraint firstItem="Kkk-4P-2e2" firstAttribute="height" secondItem="wzP-N5-hkw" secondAttribute="height" id="egT-UH-VQm"/>
+                            <constraint firstItem="SlQ-sU-tj8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="gK0-UG-rgR"/>
+                            <constraint firstItem="Prt-kR-Vvd" firstAttribute="height" secondItem="wzP-N5-hkw" secondAttribute="height" id="hVj-ej-YdJ"/>
+                            <constraint firstItem="wzP-N5-hkw" firstAttribute="trailing" secondItem="LEe-38-VUz" secondAttribute="trailing" id="i7e-T5-cYG"/>
+                            <constraint firstItem="Kkk-4P-2e2" firstAttribute="top" secondItem="wzP-N5-hkw" secondAttribute="bottom" constant="8" id="iSg-8O-iGT"/>
+                            <constraint firstItem="wzP-N5-hkw" firstAttribute="leading" secondItem="LAA-ow-npB" secondAttribute="trailing" constant="16" id="jF2-fs-Fe3"/>
+                            <constraint firstItem="g8Q-0K-dv0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="kVX-aq-IU4"/>
+                            <constraint firstItem="yQd-QC-MPS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="kzw-v7-phY"/>
+                            <constraint firstItem="g8Q-0K-dv0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="lS2-y4-2dx"/>
+                            <constraint firstItem="LEe-38-VUz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="mUq-61-mzL"/>
+                            <constraint firstItem="Qv0-Pi-Irj" firstAttribute="height" secondItem="yQd-QC-MPS" secondAttribute="height" id="oRe-jC-0Oa"/>
+                            <constraint firstItem="LAA-ow-npB" firstAttribute="leading" secondItem="g8Q-0K-dv0" secondAttribute="trailing" constant="8" id="s0b-a4-umS"/>
+                            <constraint firstItem="LEe-38-VUz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="so8-Mj-t5t"/>
+                            <constraint firstItem="Qv0-Pi-Irj" firstAttribute="width" secondItem="yQd-QC-MPS" secondAttribute="width" id="t2D-gw-EGF"/>
+                            <constraint firstItem="Kkk-4P-2e2" firstAttribute="width" secondItem="wzP-N5-hkw" secondAttribute="width" id="v1C-5F-KQB"/>
+                            <constraint firstItem="SlQ-sU-tj8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vJE-TI-vZb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MTZ-04-yLE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lblIsEvaluating" destination="5pF-I2-Ht9" id="hkX-W5-2zJ"/>
+                        <outlet property="lblIsTypingNumber" destination="7uh-P6-D2F" id="gnC-68-Wi5"/>
+                        <outlet property="stackDebug" destination="SlQ-sU-tj8" id="dx3-XG-Dnc"/>
+                        <outlet property="switchDebug" destination="ilE-0J-U5P" id="0zw-VQ-xrD"/>
+                        <outlet property="txtValues" destination="LEe-38-VUz" id="1BN-c8-yrU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397.5" y="487.5"/>
+        </scene>
+    </scenes>
+</document>
